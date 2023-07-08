@@ -19,8 +19,3 @@ The SIEM home lab setup involves the following steps:
 
 ![Screenshot 2023-07-07 002038](https://github.com/emeka789/SiemLab/assets/99328320/a165684d-2852-4dc0-ade8-b86d18d810e2)
 
-
-## Conclusion
-
-By following the steps outlined in this documentation, you can collect, parse, and visualize log data effectively, enabling you to gain valuable insights into potential security threats and improve situational awareness.
-
