@@ -1,6 +1,6 @@
 # Azure Sentinel: Log Creation, Analysis, & Visualization Using a SIEM
 
-This post documents the process of creating a SIEM home lab to visualize failed login attempt data using various Microsoft Azure tools as well as a Geolocation API in conjuction with Powershell for log creation.
+![Log ana](https://github.com/emeka789/SiemLab/assets/99328320/5e785f6b-fa0e-4a5e-be95-69e9777b7299)
 
 ## Process
 
