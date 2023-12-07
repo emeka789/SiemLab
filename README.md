@@ -1,4 +1,4 @@
-# Azure Sentinel: Log Creation, Analysis, & Visualization Using a SIEM
+# Azure Honeynet and SOC Environment
 
 ![Log ana](https://github.com/emeka789/SiemLab/assets/99328320/5e785f6b-fa0e-4a5e-be95-69e9777b7299)
 
