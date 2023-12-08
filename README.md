@@ -1,10 +1,10 @@
-# Honeynet and SOC Environment simulation using Azure
+# Honeynet and SOC Environment using Azure
 
 ![Log ana](https://github.com/emeka789/SiemLab/assets/99328320/5e785f6b-fa0e-4a5e-be95-69e9777b7299)
 
 ## Process
 
-The SIEM home lab setup involves the following steps:
+In this project, we create an unsecured honeynet environment to collect logs from (Syslog, WindowsEvent) with the purpose of analyzing  and monitoring :
 
 1. **Creating Log Files with PowerShell/Geolocation API:** This PowerShell script was used along w/ a Geolocation API to track/collect login attempt data from various sources, collecting data points such as Latitude/Longitude, IP Address, Country, User, and Time.
 
