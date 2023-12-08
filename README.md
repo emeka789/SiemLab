@@ -2,20 +2,17 @@
 
 ![Log ana](https://github.com/emeka789/SiemLab/assets/99328320/5e785f6b-fa0e-4a5e-be95-69e9777b7299)
 
-## Process
+## Summary
 
-In this project, we create an unsecured honeynet environment to collect logs from (Syslog, WindowsEvent) with the purpose of analyzing  and monitoring :
+In this project, we create an unsecured honeynet and SOC environment within Azure & exposed it to the internet for a 24hr period to capture, consolidate, analyze, and monitor logs from several sources (Syslog, WindowsEvent etc) with the purpose of creating dashboards to visualize log data, trigger alerts and create incidents. After this, security controls were implemented to harden the environment and was once again exposed to the internet. Metrics were compared between the two periods to evaluate the environment's security posture and incident response effectiveness.
 
-1. **Creating Log Files with PowerShell/Geolocation API:** This PowerShell script was used along w/ a Geolocation API to track/collect login attempt data from various sources, collecting data points such as Latitude/Longitude, IP Address, Country, User, and Time.
+## Metrics captured and analyzed
 
-![Screenshot 2023-07-07 002824](https://github.com/emeka789/SiemLab/assets/99328320/df3ad977-215b-472e-8ac8-e4c9fb423f6c)
+- Linux Event Logs (Syslog)
+- Windows Event Logs (SecurityEvent)
+- NSG allowed malicious flows (AzureNetworkAnalytics_CL)
+- Alerts triggered via Azure Sentinel (SecurityIncident)
+- Alerts triggered via Log Analytics Workspace (SecurityAlert)
 
 
-2. **Parsing Log Data with Azure Log Analytics Workspace:** Create an Azure Log Analytics Workspace to manage and analyze log data. Use the Log Analytics Workspace to parse log files and extract specific geolocation data, such as latitude and longitude.
-
-![Screenshot 2023-07-07 003030](https://github.com/emeka789/SiemLab/assets/99328320/8cf367d5-9cdf-4838-b030-7018b8a235ae)
-
-3. **Visualizing Geolocation Data with Azure Sentinel:** Connect your Azure Log Analytics Workspace to Azure Sentinel. Use Azure Sentinel's built-in tools to create a custom map-based visualization. Map the latitude and longitude fields from your log entries.
-
-![Screenshot 2023-07-07 002038](https://github.com/emeka789/SiemLab/assets/99328320/a165684d-2852-4dc0-ade8-b86d18d810e2)
 
