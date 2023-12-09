@@ -14,6 +14,20 @@ In this project, we create an unsecured honeynet and SOC environment within Azur
 - Alerts triggered via Azure Sentinel (SecurityIncident)
 - Alerts triggered via Log Analytics Workspace (SecurityAlert)
 
+## Attack Maps: Unsecured State
+
+### Attempts to SSH into Linux VM
+![Linux SSH](https://github.com/emeka789/emeka789/assets/99328320/15323529-2c39-457c-9bc5-39d00deb1c1d)
+
+### Attempts to RDP into Windows VM
+![Windows RDP](https://github.com/emeka789/emeka789/assets/99328320/5c4683eb-2e66-4ccb-ad25-4fc4922491b0)
+
+### Malicious flows allowed in via NSG
+![NSG](https://github.com/emeka789/emeka789/assets/99328320/ce49c11a-78a6-41be-9fad-be8bb0524ebc)
+
+## Attack Maps: Secured State (POST-HARDENING)
+  Map queries returned back empty after 
+  
 
 
 
