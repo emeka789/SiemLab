@@ -26,7 +26,7 @@ In this project, we create an unsecured honeynet and SOC environment within Azur
 ![NSG](https://github.com/emeka789/emeka789/assets/99328320/ce49c11a-78a6-41be-9fad-be8bb0524ebc)
 
 ## Attack Maps: Secured State (POST-HARDENING)
-  Map queries returned back empty after 
+  Map queries returned back empty after implementation of security controls
   
 
 
