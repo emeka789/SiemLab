@@ -11,8 +11,6 @@ In this project, we created an unsecured honeynet and SOC environment within Azu
 - Linux Event Logs (Syslog)
 - Windows Event Logs (SecurityEvent)
 - NSG allowed malicious flows (AzureNetworkAnalytics_CL)
-- Alerts triggered via Azure Sentinel (SecurityIncident)
-- Alerts triggered via Log Analytics Workspace (SecurityAlert)
 
 ## Attack Maps: Unsecured State
 
