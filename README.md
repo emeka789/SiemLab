@@ -11,6 +11,19 @@ In this project, we created an unsecured honeynet and SOC environment within Azu
 - Linux Event Logs (Syslog)
 - Windows Event Logs (SecurityEvent)
 - NSG allowed malicious flows (AzureNetworkAnalytics_CL)
+- SecurityIncident (Incident Created by Sentinel)
+
+## Technologies, Regulations and Azure Components Used
+- Azure Network Security Groups (NSGs)
+- Azure Virtual Network (Vnet)
+- Azure Virtual Machines (Windows/Linux)
+- Log Analytics Workspace (KQL queries)
+- Azure Key Vault (Auditing and Monitoring of Secrets/Keys/Certificates) 
+- Azure Blob Storage Account (Object Storage and Access Management)
+- Commnand Line Interface for Virtual Machines (PowerShell, Command Shell, Terminal)
+- Windows Remote Desktop Protocol for Remote Access (RDP)
+- Microsoft Sentinel for Security Information and Event Management (SIEM)
+- NIST SP 800-53 Revision (Security and Privacy Controls)
 
 ## Attack Maps: Unsecured State
 
