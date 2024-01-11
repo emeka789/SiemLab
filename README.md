@@ -33,10 +33,11 @@ This phase's aim was to study real-world attack patterns by deliberately exposin
 
 | Metrics  | Count |
 | ------------- | ------------- |
-| Linux Event Logs (Syslog)  |  2 |
-| Windows Event Logs (SecurityEvent)  | 2  |
-| SecurityIncident (Incident created by Sentinel) |  2 |
+| Linux Event Logs (Syslog)  |  230 |
+| Windows Event Logs (SecurityEvent)  | 9995  |
+| SecurityIncident (Incident created by Sentinel) |  122 |
 | SecurityAlert (Alert create by Log Analytics Workspace)  | 2  |
+| AzureNetworkAnalytics_CL (Malicious Flows allowed into the NSG)  | 888  |
 
 
 ## Attack Maps: Unsecure State
