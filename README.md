@@ -55,7 +55,13 @@ This phase's aim was to study real-world attack patterns by deliberately exposin
 
 ## Attack Maps: Secured State
   Map queries returned back empty after implementation of security controls
-  
+| Metrics  | Count |
+| ------------- | ------------- |
+| Windows Event Logs (SecurityEvent  |  2786 |
+| Linux Event Logs (Syslog)  | 0  |
+| SecurityIncident (Incident created by Sentinel) |  0 |
+| SecurityAlert (Alert create by Log Analytics Workspace)  | 0  |
+| AzureNetworkAnalytics_CL (Malicious Flows allowed into the NSG)  | 0  |  
 
 
 
