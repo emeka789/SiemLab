@@ -31,6 +31,14 @@ In this project, we created an unsecured honeynet and SOC environment within Azu
 
 This phase's aim was to study real-world attack patterns by deliberately exposing a virtual environment to the public internet with minimal security controls. The environment comprised a Windows 10 Virtual Machine with a SQL database, a Linux Virtual Machine, a blob storage account, and a key vault, strategically chosen to expand the attack surface. Security controls were intentionally limited, with disabled firewalls on virtual machines, Network Security Groups configured to allow all inbound traffic, as well as public endpoints visible to the web for the storage account and key vault. Log Analytics and Microsoft Sentinel were implemented for comprehensive logging, monitoring, and incident creation/response. To visualize the recorded malicious activities, four custom query-based workbooks were created in Microsoft Sentinel, presenting a world map for geographical analysis of attacks. The subsequent section provides insights into the results of these real-world attacks, displaying practical and realistic cybersecurity simulations.
 
+| Metrics  | Count |
+| ------------- | ------------- |
+| Linux Event Logs (Syslog)  |  2 |
+| Windows Event Logs (SecurityEvent)  | 2  |
+| SecurityIncident (Incident created by Sentinel) |  2 |
+| SecurityAlert (Alert create by Log Analytics Workspace)  | 2  |
+
+
 ## Attack Maps: Unsecure State
 
 #### This attack map depicts malicious attempts to SSH into the Linux VM
