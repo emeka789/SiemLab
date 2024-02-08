@@ -63,8 +63,8 @@ To further secure the environment, diverse hardening techniques were used includ
 | ------------- | ------------- |
 | Windows Event Logs (SecurityEvent  |  2786 |
 | Linux Event Logs (Syslog)  | 2  |
-| SecurityIncident (Incident created by Sentinel) |  0 |
-| SecurityAlert (Alert create by Log Analytics Workspace)  | 0  |
+| SecurityIncident (Incidents created by Sentinel) |  0 |
+| SecurityAlert (Alerts create by Log Analytics Workspace)  | 0  |
 | AzureNetworkAnalytics_CL (Malicious Flows allowed into the NSG)  | 0  |  
 
 
