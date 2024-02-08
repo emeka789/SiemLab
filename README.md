@@ -6,13 +6,6 @@
 
 In this project, an unsecured honeynet and SOC environment within Azure was created & exposed to the internet for a 24hr period to capture, consolidate, analyze, and monitor logs from several sources (Syslog, SecurityEvent etc.) with the purpose of creating dashboards to visualize log data, trigger alerts and create incidents. After this, security controls were implemented to harden the environment and was once again exposed to the internet for an additional 24hr period. Metrics were compared between the two periods to evaluate the environment's security posture and incident response effectiveness.
 
-## Metrics captured and analyzed
-
-- Linux Event Logs (Syslog)
-- Windows Event Logs (SecurityEvent)
-- NSG allowed malicious flows (AzureNetworkAnalytics_CL)
-- SecurityIncident (Incident Created by Sentinel)
-
 ## Technologies, Regulations and Azure Components Used
 - Azure Network Security Groups (NSGs)
 - Azure Virtual Network (Vnet)
@@ -26,6 +19,15 @@ In this project, an unsecured honeynet and SOC environment within Azure was crea
 - Microsoft Defender for Cloud for Threat Protection
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)  (Security and Privacy Controls)
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) (Incident Handling Guide)
+
+
+## Metrics captured and analyzed
+
+- Linux Event Logs (Syslog)
+- Windows Event Logs (SecurityEvent)
+- NSG allowed malicious flows (AzureNetworkAnalytics_CL)
+- SecurityIncident (Incident Created by Sentinel)
+
 
 # Before Hardening
 
