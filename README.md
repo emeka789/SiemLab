@@ -6,7 +6,7 @@
 
 In this project, an unsecured honeynet and SOC environment within Azure was created & exposed to the internet for a 24hr period to capture, consolidate, analyze, and monitor logs from several sources (Syslog, SecurityEvent etc.) with the purpose of creating dashboards to visualize log data, trigger alerts and create incidents. After this, security controls were implemented to harden the environment and was once again exposed to the internet for an additional 24hr period. Metrics were compared between the two periods to evaluate the environment's security posture and incident response effectiveness.
 
-## Technologies, Regulations and Azure Components Used
+## Technologies, Regulations and Azure Resources Used
 - Azure Network Security Groups (NSGs)
 - Azure Virtual Network (Vnet)
 - Azure Virtual Machines (Windows/Linux)
