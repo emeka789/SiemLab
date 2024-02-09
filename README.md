@@ -55,17 +55,25 @@ This phase's aim was to study real-world attack patterns by deliberately exposin
 
 # After Hardening
 In this project phase, the primary objective was to enhance the security infrastructure by hardening and establish robust controls in alignment with NIST SP 800-53 Revision 5 etc.
-To further secure the environment, diverse hardening techniques were used including:
+To further secure the environment, other hardening techniques were used including:
+- #### Network Security Groups
+  - NSGs were secured by blocking all inbound and outbound traffic with the exception of designated IP addresses that needed connection to the virtual machines. This was to make sure only authorized devices had access to the VMs.
 
 ## Attack Maps: Secured State
   Map queries returned back empty after implementation of security controls
+  
 | Metrics  | Count |
 | ------------- | ------------- |
-| Windows Event Logs (SecurityEvent  |  2786 |
+| Windows Event Logs (SecurityEvent)  |  2786 |
 | Linux Event Logs (Syslog)  | 2  |
 | SecurityIncident (Incidents created by Sentinel) |  0 |
 | SecurityAlert (Alerts create by Log Analytics Workspace)  | 0  |
 | AzureNetworkAnalytics_CL (Malicious Flows allowed into the NSG)  | 0  |  
+
+## Conclusion
+In conclusion, this project aimed to assess the effectiveness of security controls in enhancing the security posture of a honeynet and SOC environment within Microsoft Azure. By exposing the environment to the internet for a 24-hour period before/after implementing security controls, we were able to capture, consolidate, analyze, and monitor logs from various sources. Through the creation of dashboards, we were able to visualize log data, trigger alerts & incidents, and gain valuable insight into the environment's security landscape. 
+
+Additionally, various metrics were recorded to compare the effectiveness of security measures. The implementation of these measures led to a 72% decrease in Windows Security Events, a 99% decrease in Linux Events, and a complete elimination of security alerts, incidents, and malicious inbound network traffic. However, it's important to note that the 100% reduction in these categories is mainly because regular user activity wasn't simulated. In a real network, authorized users would likely generate security events and alerts, even if some of them turn out to be false positives.
 
 
 
