@@ -13,7 +13,7 @@ In this project, an unsecured honeynet and SOC environment within Azure was crea
 - Log Analytics Workspace (KQL queries)
 - Azure Key Vault (Auditing and Monitoring of Secrets/Keys/Certificates) 
 - Azure Blob Storage Account (Object Storage and Access Management)
-- Command Line Interface for Virtual Machines (PowerShell, Command Shell, Terminal)
+- Command Line Interface for Virtual Machines (Terminal, Command Prompt)
 - Windows Remote Desktop Protocol for Remote Access (RDP)
 - Microsoft Sentinel for Security Information and Event Management (SIEM)
 - Microsoft Defender for Cloud for Threat Protection
