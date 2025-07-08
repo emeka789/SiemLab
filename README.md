@@ -6,6 +6,10 @@
 
 In this project, an unsecured honeynet and SOC environment was created within Microsoft Azure & exposed to the internet for a 24hr period to capture, monitor, and analyze logs from several sources with the purpose of visualizing log data via dashboards, triggering alerts and creating incidents. After this, security controls were implemented to harden the environment and it was once again exposed to the internet for an additional 24hr period. Metrics were compared between the two periods to evaluate the environment's security posture and incident response effectiveness.
 
+## Objectives 
+
+The goal of this project is to simulate a vulnerable real-world cloud based enterprise environment to evaluate the effectiveness security monitoring, incident response and hardening strategies. This was done by intentionally exposing a misconfigured honeynet in Microsoft Azure for 24hrs, capturing malicious activity, then comparing those results against a hardened version of the same environment
+
 ## Technologies, Regulations and Azure Resources Used
 - Azure Network Security Groups (NSGs)
 - Azure Virtual Network (Vnet)
@@ -58,7 +62,8 @@ In this project phase, the primary objective was to enhance the security infrast
 To further secure the environment, other hardening techniques were used including:
 - #### Network Security Groups
   - NSGs were secured by blocking all inbound and outbound traffic with the exception of designated IP addresses that needed connection to the virtual machines. This was to make sure only authorized devices had access to the VMs.
-
+- #### Firewall
+  - Configured Azure Private Link and firewall for Azure Key Vault and Blob Storage instances. 
 ## Attack Maps: Secured State
   Map queries returned back empty after implementation of security controls
   
