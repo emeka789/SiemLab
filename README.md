@@ -35,8 +35,7 @@ The goal of this project is to simulate a vulnerable real-world cloud based ente
 
 # Before Hardening
 
-This phase's aim was to study real-world attack patterns by deliberately exposing a virtual environment to the public internet with minimal security controls. The environment comprised a Windows 10 Virtual Machine with a SQL database, a Linux Virtual Machine, a blob storage account, and a key vault, strategically chosen to expand the attack surface. Security controls were intentionally limited, with disabled firewalls on virtual machines, and Network Security Groups configured to allow all inbound traffic. Log Analytics and Microsoft Sentinel were implemented for comprehensive logging, monitoring, and incident creation/response. To visualize the recorded malicious activities, four custom query-based workbooks were created in Microsoft Sentinel, presenting a world map for geographical analysis of attacks. The subsequent section provides insights into the results of these real-world attacks, displaying practical and realistic cybersecurity simulations.
-
+This phase's aim was to study real-world attack patterns by deliberately exposing a virtual environment to the public internet with minimal security controls. The environment comprised a Windows 10 Virtual Machine with a SQL database, a Linux Virtual Machine, a blob storage account, and a key vault, strategically chosen to expand the attack surface. Security controls were intentionally limited, with disabled firewalls on virtual machines, and Network Security Groups configured to allow all inbound traffic. Log Analytics and Microsoft Sentinel were implemented for comprehensive logging, monitoring, and incident creation/response. To visualize the recorded malicious activities, four custom query-based workbooks were created in Microsoft Sentinel, presenting a world map for geographical analysis of attacks. The subsequent section provides insights into the results of these real-world attacks.
 | Metrics  | Count |
 | ------------- | ------------- |
 | Linux Event Logs (Syslog)  |  230 |
@@ -76,9 +75,9 @@ To further secure the environment, other hardening techniques were used includin
 | AzureNetworkAnalytics_CL (Malicious Flows allowed into the NSG)  | 0  |  
 
 ## Conclusion
-In conclusion, this project aimed to assess the effectiveness of security controls in enhancing the security posture of a honeynet and SOC environment within Microsoft Azure. By exposing the environment to the internet for a 24-hour period before/after implementing security controls, we were able to capture, consolidate, analyze, and monitor logs from various sources. Through the creation of dashboards, we were able to visualize log data, trigger alerts & incidents, and gain valuable insight into the environment's security landscape. 
+By exposing the environment to the internet for a 24-hour period before/after implementing security controls, we were able to capture, consolidate, analyze, and monitor logs from various sources. Through the creation of dashboards, we were able to visualize log data, trigger alerts & incidents, and gain valuable insight into the environment's security landscape. 
 
-Additionally, various metrics were recorded to compare the effectiveness of security measures. The implementation of these measures led to a 72% decrease in Windows Security Events, a 99% decrease in Linux Events, and a complete elimination of security alerts, incidents, and malicious inbound network traffic. However, it's important to note that the 100% reduction in these categories is mainly because regular user activity wasn't simulated. In a real network, authorized users would likely generate security events and alerts, even if some of them turn out to be false positives.
+The implementation of these measures led to a 72% decrease in Windows Security Events, a 99% decrease in Linux Events, and a complete elimination of security alerts, incidents, and malicious inbound network traffic. However, it's important to note that the 100% reduction in these categories is mainly because regular user activity wasn't simulated. In a real network, authorized users would likely generate security events and alerts, even if some of them turn out to be false positives.
 
 
 
